@@ -1,0 +1,13 @@
+{% if pg_name == 'home' %}
+  Home
+{% else %}
+  <a href="{% url 'home' %}" title="Home">Home&nbsp;</a>
+{% endif %}
+
+|
+
+{% if pg_name == 'services' %}
+  Services
+{% else %}
+  <a href="{% url 'services' %}" title="Services">&nbsp;Services</a>
+{% endif %}

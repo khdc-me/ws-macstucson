@@ -1,0 +1,17 @@
+FROM python:3.6.5-alpine
+
+RUN pip install pipenv
+
+ENV PYTHONUNBUFFEREN=1 \
+    DJANGO_SETTINGS_MODULE=config.settings.development
+
+RUN mkdir -p /usr/src/app/www_macstucson_com
+WORKDIR /usr/src/app/www_macstucson_com
+
+COPY Pipfile /usr/src/app/www_macstucson_com
+COPY Pipfile.lock /usr/src/app/www_macstucson_com
+RUN pipenv install --system
+COPY . /usr/src/app/www_macstucson_com
+
+RUN python manage.py collectstatic --no-input
+CMD ["gunicorn", "-b", "0.0.0.0:8000", "-w", "2", "config.wsgi:application"]

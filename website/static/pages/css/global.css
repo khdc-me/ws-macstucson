@@ -1,0 +1,49 @@
+body {
+  background-color: #dde1e0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-size: 16pt;
+ 
+  text-align: center;
+
+  font-weight: bold;
+  color: #9f2531;
+}
+
+h2 {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-size: 14pt;
+
+  text-align: left;
+
+  font-weight: bold;
+  color: #9f2531;
+}
+
+#pg-container {
+  width: 100%;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-logonav-grid {
+  display: none;
+}
+
+#tiny-info-container-grid {
+  display: none;
+}
+
+#tiny-content-grid {
+  display: none;
+}
+
+#tiny-footer-grid {
+  display: none;
+}

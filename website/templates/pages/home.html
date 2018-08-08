@@ -1,0 +1,126 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block pg_title %}Home{% endblock %}
+
+{% block pg_content %}
+<!-- START TINY -->
+<div id="tiny-info-container-grid" class="ui grid">
+  <div id="tiny-open-close-row" class="one column row">
+    <!-- START OPEN/CLOSED COLUMN -->
+    <div id="tiny-open-closed" class="center aligned column">
+      <p>Currently
+      {% if is_open %}
+        <span style="color: #008000;">OPEN</span>
+      {% else %}
+        <span style="color: #800000">CLOSED</span>
+      {% endif %}
+      </p>
+    </div> <!-- close 'tiny-open-closed' -->
+  </div> <!-- close 'tiny-open-close-row' -->
+
+  <div id="tiny-phone-row" class="one column row">
+    <div id="tiny-phone" class="center aligned column">
+      <!-- start phone number -->
+      <a href="tel:+15207777195">
+        <button id="tiny-phone-number-btn" class="ui labeled icon blue basic button">
+          <i class="phone square icon"></i> (520) 777-7195
+        </button>
+      </a>
+    </div> <!-- end phone number -->
+  </div>
+
+  <div id="tiny-address-row" class="one column row">
+    <!-- start address -->
+    <div id="tiny-address" class="center aligned column">
+      <a href="https://wego.here.com/directions/mix//Macs-Tire-Complete-Auto-Repair,-4451-S-Country-Club-Rd,-85714-Tucson:e-eyJuYW1lIjoiTWFjcyBUaXJlICYgQ29tcGxldGUgQXV0byBSZXBhaXIiLCJhZGRyZXNzIjoiNDQ1MSBTIENvdW50cnkgQ2x1YiBSZCwgVHVjc29uLCBBcml6b25hIiwibGF0aXR1ZGUiOjMyLjE3MDg5LCJsb25naXR1ZGUiOi0xMTAuOTI1OTIsInByb3ZpZGVyTmFtZSI6ImZhY2Vib29rIiwicHJvdmlkZXJJZCI6MTUzMzkwODMzNjgzMjQ4N30=?map=32.17089,-110.92592,15,normal&fb_locale=en_US" target="_blank">
+        <button id="tiny-address-btn" class="ui labeled icon blue basic button">
+          <i class="map marker alternate icon"></i>
+          4451 S Country Club Rd.<br>
+          Tucson, AZ&nbsp;&nbsp;85714
+        </button>
+      </a>
+    </div> <!-- end address -->
+  </div> <!-- close 'tiny-address' -->
+
+  <div id="tiny-biz-hrs-row" class="one column row">
+    <div class="center aligned column">
+      <!-- start business hours -->
+      <div id="tiny-biz-hrs-grid" class="ui grid">
+        <div class="row">
+          <div id="tiny-biz-hrs-txt" class="right aligned five wide column">
+            <b>Business Hours:</b>
+          </div>
+          <div id="tiny-biz-hrs" class="left aligned eleven wide column">
+            <b>Mon - Fri:</b> 7:30am - 4:30pm<br>
+            <b>Saturday:</b> 7:30am - 1:00pm<br>
+            <b>Sunday:</b> Closed
+          </div>
+        </div>
+      </div> <!-- end business hours -->
+    </div>
+  </div><!-- close 'tiny-biz-hrs-row' -->
+</div>  <!-- close 'tiny-info-container-grid' -->
+<!-- END TINY -->
+<!-- START MONITOR -->
+<div id="monitor-info-container-grid" class="ui center aligned grid">
+  <div class="one column row">
+    <!-- START OPEN/CLOSED COLUMN -->
+    <div id="monitor-open-closed" class="center aligned column">
+      <p>We are currently
+      {% if is_open %}
+        <span style="color: #008000;">OPEN</span>
+      {% else %}
+        <span style="color: #800000">CLOSED</span>
+      {% endif %}
+      </p>
+    </div> <!-- close 'monitor-open-closed' -->
+  </div>
+  <div id="monitor-hrs-map-row" class="two column row">
+    <div id="monitor-biz-hrs-column" class="column">
+      <div id="monitor-biz-hrs-grid" class="ui grid">
+        <div class="row">
+          <div id="monitor-biz-hrs" class="left aligned column">
+            <b>Regular Business Hours:</b><br>
+            <b>Mon - Fri:</b> 7:30am - 4:30pm<br>
+            <b>Saturday:</b> 7:30am - 1:00pm<br>
+            <b>Sunday:</b> Closed
+            <p><br>
+              <a href="tel:+15207777195">
+                <button id="monitor-phone-number-btn" class="ui labeled icon blue basic button">
+                  <i class="phone square icon"></i> (520) 777-7195
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="monitor-visit-us-txt" class="center aligned column">
+            <p>Call or visit us today for all your auto repair needs.</p>
+          </div>
+        </div>
+      </div> <!-- close 'monitor-biz-hrs-grid' -->
+    </div> <!-- close 'monitor-biz-hrs-column' -->
+
+    <div id="monitor-address-column" class="column">
+      <div id="monitor-address-grid" class="ui grid">
+        <div class="row">
+          <div id="monitor-address" class="center aligned column">
+            <a href="https://wego.here.com/directions/mix//Macs-Tire-Complete-Auto-Repair,-4451-S-Country-Club-Rd,-85714-Tucson:e-eyJuYW1lIjoiTWFjcyBUaXJlICYgQ29tcGxldGUgQXV0byBSZXBhaXIiLCJhZGRyZXNzIjoiNDQ1MSBTIENvdW50cnkgQ2x1YiBSZCwgVHVjc29uLCBBcml6b25hIiwibGF0aXR1ZGUiOjMyLjE3MDg5LCJsb25naXR1ZGUiOi0xMTAuOTI1OTIsInByb3ZpZGVyTmFtZSI6ImZhY2Vib29rIiwicHJvdmlkZXJJZCI6MTUzMzkwODMzNjgzMjQ4N30=?map=32.17089,-110.92592,15,normal&fb_locale=en_US" target="_blank">
+              <button id="monitor-address-btn" class="ui labeled icon blue basic button">
+                <i class="map marker alternate icon"></i>
+                4451 S Country Club Rd.<br>
+                Tucson, AZ&nbsp;&nbsp;85714
+              </button>
+              <br><br>
+              <img id="monitor-map-img" alt="map" src="{% static 'pages/images/macs-map.jpg' %}">
+            </a>
+          </div>
+        </div>
+      </div> <!-- close 'monitor-address-grid' -->
+    </div> <!-- close 'monitor-address-columm' -->
+  </div> <!-- close 'monitor-hrs-map-row' -->
+</div> <!-- close 'monitor-info-container-grid' -->
+<!-- END MONITOR -->
+{% endblock %}

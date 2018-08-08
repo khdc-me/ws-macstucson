@@ -1,0 +1,29 @@
+{% load static %}
+
+<div id="monitor-logonav-grid" class="ui grid">
+  <div id="monitor-logonav-row" class="row">
+    <div id="monitor-logo-column" class="four wide column">
+      <img id="monitor-logo-img" class="ui rounded image" src="{% static 'pages/images/logo.jpg' %}" alt="Macs's Tire &amp; Complete Auto Repair Logo">
+    </div>
+    <div id="monitor-nav-column" class="twelve wide column">
+      <h1>Mac's Tire &amp; Complete Auto Repair</h1>
+      <nav id="monitor-nav" class="ui four item menu">
+        {% if pg_name == 'home' %}
+          <a class="item active"><i class="home icon"></i>&nbsp;&nbsp;Home</a>
+        {% else %}
+          <a href="{% url 'home' %}" class="item"><i class="home icon"></i>&nbsp;&nbsp;Home</a>
+        {% endif %}
+
+        {% if pg_name == 'services' %}
+          <a class="item active"><i class="wrench icon"></i>&nbsp;&nbsp;What We Do</a>
+        {% else %}
+          <a href="{% url 'services' %}" class="item"><i class="wrench icon"></i>&nbsp;&nbsp;What We Do</a>
+        {% endif %}
+
+        <a class="item active"><i class="calendar alternate outline icon"></i>&nbsp;&nbsp;Schedule Oil Change</a>
+
+        <a class="item active"><i class="info circle icon"></i>&nbsp;&nbsp;Who We Are</a>
+      </nav>
+    </div>
+  </div>
+</div>

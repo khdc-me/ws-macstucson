@@ -1,0 +1,25 @@
+version: '3'
+
+services:      
+  web:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-development
+    #volumes:
+    #  - ./website/templates/pages:/usr/src/app/www_macstucson_com/website/templates/pages/
+    expose:
+      - 8000
+      
+  nginx:
+    restart: always
+    build:
+      context: ./nginx/
+      dockerfile: Dockerfile-development
+    volumes:
+      - ./website/static:/usr/src/app/www_macstucson_com/website/static/
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+

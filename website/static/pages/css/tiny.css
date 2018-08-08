@@ -1,0 +1,186 @@
+/**
+ * Any screen equal to or smaller than 447px
+ **/
+
+#monitor-logonav-grid {
+  display: none;
+}
+
+#monitor-info-container-grid {
+  display: none;
+}
+
+#monitor-footer-grid {
+  display: none;
+}
+
+body {
+  background-image: none;
+}
+
+#pg-container {  
+  width: 312px;
+}
+
+#pg-grid {
+  margin-top: -5px;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-logonav-grid {
+  display: inline;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-title-row h1 {
+  border-bottom: 1px solid #3690d4;
+}
+
+#tiny-home-logo-column {
+  border-bottom: 1px solid #3690d4;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-logo-column {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-logo-img {
+  width: 137px;
+  height: 75px;
+}
+
+#tiny-nav-column {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-home-btn {
+  width: 137px;
+  height: 75px;
+}
+
+#tiny-services-btn {
+  width: 137px;
+  height: 75px;
+}
+
+#tiny-scheduleservice-btn {
+  margin-top: 2px;
+  
+  width: 137px;
+  height: 75px;
+}
+
+#tiny-about-btn {
+  margin-top: 2px;
+  
+  width: 137px;
+  height: 75px;
+}
+
+#info-container-row {
+  margin-top: -12px;
+  
+  background-color: #ffffff;
+}
+
+#tiny-info-container-grid {
+  display: inline;
+  
+  margin-top: -5px;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-open-close-row {
+  margin-top: -13px;
+}
+
+#tiny-open-closed {
+  display: inline;
+  
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#tiny-phone-row {
+  margin-top: -18px;
+}
+
+#tiny-phone-number-btn {  
+  width: 277px;
+  height: 60px;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-address-row {
+  margin-top: -26px;
+}
+
+#tiny-address-btn {  
+  width: 277px;
+  height: 60px;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tiny-biz-hrs-row {
+  margin-top: -10px;
+  
+  padding: 5px;
+  
+  border-top: 1px solid #3690d4;
+}
+
+#tiny-biz-hrs-txt {
+  border-right: 1px solid #3690d4;
+}
+
+footer {
+  height: 100px;
+  background-color: #ffffff;
+  
+  border-top: 1px solid #3690d4;
+}
+
+#tiny-footer-grid {
+  display: inline;
+  
+  margin-top: -10px;
+}
+
+#tiny-footer-row1 {
+  margin-top: -40px;
+  margin-bottom: 0px;
+}
+
+#tiny-footer-row2 {
+  margin-top: -15px;
+  margin-bottom: 0px;
+}
+
+#tiny-footer-row3 {
+  margin-top: -15px;
+  margin-bottom: 0px;
+}
+
+#tiny-footer-grid a i {
+  font-size: 16pt;
+}
+
+.list .item {
+  border-top: 1px solid #3690d4;
+}

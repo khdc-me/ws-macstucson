@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <title>{% block pg_title %}Unknown Error Occurred{% endblock %} | Mac's Tire &amp; Complete Auto Repair</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
+    <link rel="stylesheet" href="{% static 'pages/css/global.css' %}">
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="{% static 'pages/css/monitor.css' %}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'pages/css/tiny.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div id="pg-container">
+      <div id="pg-grid" class="ui grid">
+        <div id="logonav-row" class="one column row">
+          {% if pg_name == 'home' %}
+            {% include '_tiny-home-logonav.html' %}
+          {% else %}
+            {% include '_tiny-logonav.html' %}
+          {% endif %}
+
+          {% include '_monitor-logonav.html' %}
+        </div>
+
+        <div id="info-container-row" class="one column row">
+          {% block pg_content %}
+          Unknown error occurred while loading this page.
+          {% endblock %}
+        </div>
+
+        <footer class="one column row">
+          <div class="column">
+            {% include '_tiny-footer.html' %}
+
+            {% include '_monitor-footer.html' %}
+          </div>
+        </footer>
+      </div> <!-- close 'pg-grid' -->
+    </div> <!-- close 'pg-container' -->
+  </body>
+</html>

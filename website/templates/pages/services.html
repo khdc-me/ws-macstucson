@@ -1,0 +1,120 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block pg_title %}Services{% endblock %}
+
+{% block pg_content %}
+<!-- START TINY -->
+<div id="tiny-info-container-grid" class="ui grid">
+  <div class="one column row">
+    <div class="column">
+      <h2>Services | What We Do</h2>
+    </div>
+  </div>
+  <div class="one column row">
+    <div class="column">
+      <ul class="ui middle aligned selection list">
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Oil Change Packages</a>
+            <div class="description"><small>Starting from $13.99 (+ tax & disposal fees).</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Brake Services</a>
+            <div class="description"><small>Disk, drum, rotor resurface, fluid exchange.</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Suspension Services</a>
+            <div class="description"><small>Alignments starting at $39.99.</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Tires &amp; Wheels</a>
+            <div class="description"><small>$10 each for rotation, balancing, &amp; patching.</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Road Trip Vacation Special</a>
+            <div class="description"><small>Ppeace of mind for your next road trip.</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">Pre-Purchase Inspection</a>
+            <div class="description"><small>Buying a used car? Let us take a look at it 1<sup>st</sup>.</small></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="angle right icon"></i>
+          <div class="content">
+            <a class="header">15k, 45k, 75k, 105k Inspection</a>
+            <div class="description"><small>Lube, oil, fluid levels, brake check, &amp; more.</small></div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END TINY -->
+<!-- START MONITOR -->
+<div id="monitor-info-container-grid" class="ui center aligned grid">
+  <div class="one column row">
+    <div class="column">
+      <h2>Services | What We Do</h2>
+    </div>
+  </div>
+  <div id="monitor-services-row1" class="four column row">
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+  </div>
+  <div id="monitor-services-row2" class="three column row">
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+    <div class="column">
+      <a class="ui medium image">
+        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      </a>
+    </div>
+  </div>
+</div> <!-- close 'monitor-info-container-grid' -->
+<!-- END MONITOR -->
+{% endblock %}

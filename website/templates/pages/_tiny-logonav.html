@@ -1,0 +1,23 @@
+{% load static %}
+
+<div id="tiny-logonav-grid" class="ui grid">
+  <div class="two column row">
+    <!-- START LEFT LOGO COLUMN-->
+    <div id="tiny-logo-column" class="column">
+      <img id="tiny-logo-img" class="ui rounded image" src="{% static 'pages/images/logo.jpg' %}" alt="Macs's Tire &amp; Complete Auto Repair Logo">
+    </div>
+    <!-- START RIGHT BUTTON NAV COLUMN -->
+    <div id="tiny-nav-column" class="center aligned column">
+      <a href="{% url 'home' %}">
+        <button id="tiny-home-btn" class="ui labeled icon button">
+          <i class="home icon"></i> Home
+        </button>
+      </a>
+    </div>
+  </div>
+    <div id="tiny-title-row" class="one column row">
+      <div class="center aligned column">
+        <h1>Mac's Tire &amp;<br>Complete Auto Repair</h1>
+      </div>
+    </div>
+</div> <!-- close 'tiny-logonav-grid' -->

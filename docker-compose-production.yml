@@ -1,0 +1,37 @@
+version: '3'
+
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
+
+services:
+  web:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-production
+    expose:
+      - 8000
+    networks:
+      - internal
+
+  nginx-macstucson:
+    restart: always
+    build:
+      context: ./nginx/
+      dockerfile: Dockerfile-production
+    volumes:
+      - ./website/static:/usr/src/app/www_macstucson_com/website/static/
+    labels:
+      - "traefik.backend=nginx-macstucson"
+      - "traefik.frontend.rule=Host:www.macstucson.com, macstucson.com"
+      - "traefik.docker.network=proxy"
+      - "traefik.port=80"
+      - "traefik.port=443"
+    networks:
+      - internal
+      - proxy
+    depends_on:
+      - web

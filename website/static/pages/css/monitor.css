@@ -1,0 +1,126 @@
+/***
+ * Any screen larger equal to or larger than 769px.
+ **/
+
+body {
+  background-image: url("../images/bg.jpg");
+}
+
+#pg-container {
+  width: 748px;
+}
+
+#pg-grid {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#monitor-logonav-grid {
+  width: 100%;
+  
+  margin-right: auto;
+  margin-left: auto;
+  
+  border-bottom: 1px solid #3690d4;
+}
+
+#monitor-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+#monitor-info-container-grid {
+  background-color: rgba(255, 255, 255, .7);
+    
+  width: 100%;
+  
+  margin-top: -11px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#monitor-open-closed {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#monitor-hrs-map-row {
+  margin-top: -20px;
+}
+
+#monitor-biz-hrs-grid {
+  margin-right: auto;
+  margin-left: auto;
+  
+  width: 80%;
+}
+
+#monitor-biz-hrs {
+  border-top: 1px solid #3690d4;
+  border-right: 1px solid #3690d4;
+  border-bottom: 1px solid #3690d4;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#monitor-address-grid {
+  /*width: 80%;*/
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#monitor-address {
+  border-top: 1px solid #3690d4;
+  border-left: 1px solid #3690d4;
+  border-bottom: 1px solid #3690d4;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#monitor-visit-us-txt {
+  font-size: 16pt;
+  font-weight: bold;
+  color: #9f2531;
+}
+
+#monitor-map-img {
+  width: 100%;
+}
+
+#monitor-services-row1 img {
+  width: 187px;
+  height: 187px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#monitor-services-row2 img {
+  width: 187px;
+  height: 187px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, .7);
+  
+  border-top: 1px solid #3690d4;
+}
+
+#monitor-footer-grid {
+  margin-top: -10px;
+}
+
+#monitor-footer-grid a {
+  font-weight: bold;
+}
+
+#monitor-footer-grid a i {
+  font-size: 18pt;
+}
