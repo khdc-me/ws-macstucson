@@ -6,8 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-development
-    #volumes:
-    #  - ./website/templates/pages:/usr/src/app/www_macstucson_com/website/templates/pages/
+    volumes:
+      - ./website/templates/pages:/usr/src/app/www_macstucson_com/website/templates/pages/
     expose:
       - 8000
       

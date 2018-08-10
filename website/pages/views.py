@@ -25,7 +25,6 @@ def oil_change_packages(request):
 
 def check_is_open():
     from django.utils import timezone
-    import datetime
     
     current_datetime = timezone.localtime(timezone.now())
     current_weekday = timezone.localtime(timezone.now()).strftime("%A")
@@ -33,7 +32,7 @@ def check_is_open():
     weekday_closes_at = current_datetime.replace(hour=16, minute=30)
     saturday_closes_at = current_datetime.replace(hour=13, minute=00)
     if ((current_weekday not in ['Saturday', 'Sunday'] and opens_at <= current_datetime < weekday_closes_at)
-            or (current_weekday in ['Saturday'] and opens_at <= current_time < saturday_closes_at)):
+            or (current_weekday in ['Saturday'] and opens_at <= current_datetime < saturday_closes_at)):
         is_open = True
     else:
         is_open = False
