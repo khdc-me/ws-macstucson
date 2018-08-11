@@ -23,6 +23,11 @@ def oil_change_packages(request):
     return render(request, 'services/oil-change-packages.html', {'pg_name': pg_name})
 
 
+def brake_services(request):
+    pg_name = 'brake-services'
+    return render(request, 'services/brake-services.html', {'pg_name': pg_name})
+
+
 def check_is_open():
     from django.utils import timezone
     
