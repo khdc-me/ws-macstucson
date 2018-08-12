@@ -43,6 +43,11 @@ def road_trip(request):
     return render(request, 'services/road-trip.html', {'pg_name': pg_name})
 
 
+def prepurchase_ins(request):
+    pg_name = 'prepurchase-ins'
+    return render(request, 'services/prepurchase-ins.html', {'pg_name': pg_name})
+
+
 def check_is_open():
     from django.utils import timezone
     
