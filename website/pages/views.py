@@ -28,6 +28,11 @@ def brake_services(request):
     return render(request, 'services/brake-services.html', {'pg_name': pg_name})
 
 
+def suspension_services(request):
+    pg_name = 'suspension-services'
+    return render(request, 'services/suspension-services.html', {'pg_name': pg_name})
+
+
 def check_is_open():
     from django.utils import timezone
     
