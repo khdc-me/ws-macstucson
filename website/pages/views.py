@@ -33,6 +33,11 @@ def suspension_services(request):
     return render(request, 'services/suspension-services.html', {'pg_name': pg_name})
 
 
+def tires_wheels(request):
+    pg_name = 'tires-wheels'
+    return render(request, 'services/tires-wheels.html', {'pg_name': pg_name})
+
+
 def check_is_open():
     from django.utils import timezone
     
