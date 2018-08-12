@@ -46,8 +46,8 @@
         <div class="item">
           <i class="angle right icon"></i>
           <div class="content">
-            <a class="header">Road Trip Vacation Special</a>
-            <div class="description"><small>Ppeace of mind for your next road trip.</small></div>
+            <div class="header"><a href="{% url 'road-trip' %}">Road Trip Vacation Special</a></div>
+            <div class="description"><small>Peace of mind for your next road trip.</small></div>
           </div>
         </div>
         <div class="item">
@@ -104,8 +104,9 @@
   </div>
   <div id="monitor-services-row2" class="three column row">
     <div class="column">
-      <a class="ui medium image">
-        <img src="{% static 'pages/images/oil-change.jpg' %}" alt="Oil Change Packages">
+      <a href="{% url 'road-trip' %}" class="ui medium image">
+        <img src="{% static 'pages/images/road-trip.jpg' %}" alt="Road Trip Specials">
+        <small>Peace of mind for your next road trip.</small>
       </a>
     </div>
     <div class="column">
