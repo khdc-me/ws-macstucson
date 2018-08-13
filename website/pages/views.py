@@ -48,6 +48,11 @@ def prepurchase_ins(request):
     return render(request, 'services/prepurchase-ins.html', {'pg_name': pg_name})
 
 
+def major_service(request):
+    pg_name = 'major-service'
+    return render(request, 'services/major-service.html', {'pg_name': pg_name})
+
+
 def check_is_open():
     from django.utils import timezone
     
