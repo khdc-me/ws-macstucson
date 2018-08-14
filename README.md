@@ -1,5 +1,5 @@
 # ws-macstucson
-Code repository for macstucson.com (web site for Mac's Tire & Complete Auto Care in Tucson, AZ)
+Code repository for [macstucson.com](https://macstucson.com) (web site for Mac's Tire & Complete Auto Care in Tucson, AZ)
 
 ## Project Scope
 * Simple/small
