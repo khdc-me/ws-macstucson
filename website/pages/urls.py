@@ -11,5 +11,6 @@ urlpatterns = [
     path('services/road-trip/', views.road_trip, name='road-trip'),
     path('services/prepurchase-ins/', views.prepurchase_ins, name='prepurchase-ins'),
     path('services/major-service/', views.major_service, name='major-service'),
+    path('privacy-policy/', views.privacy_policy, name='privacy-policy'),
     path('', views.home, name='home'),
 ]
