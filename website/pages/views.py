@@ -13,6 +13,11 @@ def home(request):
                                         })
 
 
+def privacy_policy(request):
+    pg_name = 'privacy-policy'
+    return render(request, 'privacy-policy.html', {'pg_name': pg_name})
+
+
 def services(request):
     pg_name = 'services'
     return render(request, 'services.html', {'pg_name': pg_name})
