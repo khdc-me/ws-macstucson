@@ -5,3 +5,7 @@ python:
 
 services:
   - docker
+
+install: "pipenv install --system"
+
+script: "python manage.py test"
