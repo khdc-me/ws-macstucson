@@ -36,52 +36,18 @@ body {
   margin-left: auto;
 }
 
-#tiny-title-row h1 {
-  border-bottom: 1px solid #3690d4;
-}
-
 #tiny-home-logo-column {
   border-bottom: 1px solid #3690d4;
   
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#tiny-logo-column {
-  margin-right: auto;
-  margin-left: auto;
+  width: 312px;
 }
 
 #tiny-logo-img {
-  width: 137px;
-  height: 75px;
-}
-
-#tiny-nav-column {
+  display: block;
+  
   margin-right: auto;
   margin-left: auto;
-}
 
-#tiny-home-btn {
-  width: 137px;
-  height: 75px;
-}
-
-#tiny-services-btn {
-  width: 137px;
-  height: 75px;
-}
-
-#tiny-scheduleservice-btn {
-  margin-top: 2px;
-  
-  width: 137px;
-  height: 75px;
-}
-
-#tiny-about-btn {
-  margin-top: 2px;
-  
   width: 137px;
   height: 75px;
 }
