@@ -15,11 +15,17 @@
 }
 
 body {
-  background-image: none;
+  background-color: #4060a2;
 }
 
 #pg-container {  
   width: 312px;
+  
+  background-color: #ffffff;
+}
+
+#video-container {
+  display: none;
 }
 
 #pg-grid {
