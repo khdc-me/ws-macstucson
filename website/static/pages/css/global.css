@@ -33,6 +33,24 @@ h2 {
   
   margin-right: auto;
   margin-left: auto;
+  z-index: 1;
+}
+
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#video-container .color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4060a2;
+  width: 100%;
+  height: 100vh;
+  opacity: .5;
 }
 
 #tiny-logonav-grid {
