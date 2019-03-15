@@ -24,32 +24,43 @@
 
   </head>
   <body>
-    <div id="pg-container">
-      <div id="pg-grid" class="ui grid">
-        <div id="logonav-row" class="one column row">
-          {% if pg_name == 'home' %}
-            {% include '_tiny-home-logonav.html' %}
-          {% else %}
-            {% include '_tiny-logonav.html' %}
-          {% endif %}
+    <div id="wrapper">
+      <div id="pg-container">
+        <div id="pg-grid" class="ui grid">
+          <div id="logonav-row" class="one column row">
+            {% if pg_name == 'home' %}
+              {% include '_tiny-home-logonav.html' %}
+            {% else %}
+              {% include '_tiny-logonav.html' %}
+            {% endif %}
 
-          {% include '_monitor-logonav.html' %}
-        </div>
-
-        <div id="info-container-row" class="one column row">
-          {% block pg_content %}
-          Unknown error occurred while loading this page.
-          {% endblock %}
-        </div>
-
-        <footer class="one column row">
-          <div class="column">
-            {% include '_tiny-footer.html' %}
-
-            {% include '_monitor-footer.html' %}
+            {% include '_monitor-logonav.html' %}
           </div>
-        </footer>
-      </div> <!-- close 'pg-grid' -->
-    </div> <!-- close 'pg-container' -->
+
+          <div id="info-container-row" class="one column row">
+            {% block pg_content %}
+            Unknown error occurred while loading this page.
+            {% endblock %}
+          </div>
+
+          <footer class="one column row">
+            <div class="column">
+              {% include '_tiny-footer.html' %}
+
+              {% include '_monitor-footer.html' %}
+            </div>
+          </footer>
+        </div> <!-- close 'pg-grid' -->
+      </div> <!-- close 'pg-container' -->
+
+      <div id="video-container">
+        <div class="color-overlay"></div>
+        <video autoplay loop muted poster="{% static 'pages/images/shop_sweep.png' %}">
+          <source src="{% static 'pages/images/shop_sweep.mp4' %}" type="video/mp4">
+          <source src="{% static 'pages/images/shop_sweep.webm' %}" type="video/webm">
+          <source src="{% static 'pages/images/shop_sweep.ogv' %}" type="video/ogv">
+        </video>
+      </div>
+    </div> <!-- close 'wrapper' -->
   </body>
 </html>

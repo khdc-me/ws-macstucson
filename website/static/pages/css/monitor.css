@@ -2,10 +2,6 @@
  * Any screen larger equal to or larger than 769px.
  **/
 
-body {
-  background-image: url("../images/bg.jpg");
-}
-
 #pg-container {
   width: 748px;
 }
@@ -17,6 +13,8 @@ body {
 }
 
 #monitor-logonav-grid {
+  background-color: rgba(255, 255, 255, .9);
+  
   width: 100%;
   
   margin-right: auto;
@@ -31,7 +29,7 @@ body {
 }
 
 #monitor-info-container-grid {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .9);
     
   width: 100%;
   
@@ -106,7 +104,7 @@ body {
 }
 
 footer {
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .9);
   
   border-top: 1px solid #3690d4;
 }
